@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		196F67C62FC8A41300E5F446 /* GithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F67C52FC8A41200E5F446 /* GithubModel.swift */; };
+		196F67C82FC8A48700E5F446 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F67C72FC8A48700E5F446 /* GitHubService.swift */; };
+		196F67CA2FC8A4DD00E5F446 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F67C92FC8A4DD00E5F446 /* SearchViewModel.swift */; };
 		19E5997A2D8A948A004F1DC1 /* barcalysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E599792D8A948A004F1DC1 /* barcalysApp.swift */; };
 		19E5997C2D8A948A004F1DC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E5997B2D8A948A004F1DC1 /* ContentView.swift */; };
 		19E5997E2D8A948C004F1DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E5997D2D8A948C004F1DC1 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		196F67C52FC8A41200E5F446 /* GithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubModel.swift; sourceTree = "<group>"; };
+		196F67C72FC8A48700E5F446 /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		196F67C92FC8A4DD00E5F446 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		19E599762D8A948A004F1DC1 /* barcalys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = barcalys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E599792D8A948A004F1DC1 /* barcalysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barcalysApp.swift; sourceTree = "<group>"; };
 		19E5997B2D8A948A004F1DC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,9 @@
 			children = (
 				19E599792D8A948A004F1DC1 /* barcalysApp.swift */,
 				19E5997B2D8A948A004F1DC1 /* ContentView.swift */,
+				196F67C52FC8A41200E5F446 /* GithubModel.swift */,
+				196F67C72FC8A48700E5F446 /* GitHubService.swift */,
+				196F67C92FC8A4DD00E5F446 /* SearchViewModel.swift */,
 				19E5997D2D8A948C004F1DC1 /* Assets.xcassets */,
 				19E5997F2D8A948C004F1DC1 /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196F67C82FC8A48700E5F446 /* GitHubService.swift in Sources */,
+				196F67C62FC8A41300E5F446 /* GithubModel.swift in Sources */,
 				19E5997C2D8A948A004F1DC1 /* ContentView.swift in Sources */,
 				19E5997A2D8A948A004F1DC1 /* barcalysApp.swift in Sources */,
+				196F67CA2FC8A4DD00E5F446 /* SearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

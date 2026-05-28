@@ -8,12 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = SearchViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .leading, spacing: 12) {
+            TextField("Search GitHub Users", text: $viewModel.searchText, onCommit: {
+                Task { await viewModel.searchUsers() }
+            })
+            .textFieldStyle(.roundedBorder)
+            .onChange(of: viewModel.searchText) { _ in
+                viewModel.searchTextDidChange()
+            }
+
+            if viewModel.isLoading {
+                ProgressView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            } else if let errorMessage = viewModel.errorMessage {
+                Text("Error: \(errorMessage)")
+                    .foregroundColor(.red)
+                    .padding(.top, 8)
+            } else {
+                List(viewModel.users, id: \.id) { user in
+                    VStack(alignment: .leading) {
+                        Text(user.login)
+                            .font(.headline)
+                        Text("ID: \(user.id)")
+                            .font(.subheadline)
+                    }
+                }
+                .listStyle(.plain)
+            }
+
+            Spacer()
         }
         .padding()
     }
