@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            TextField("Search GitHub Users", text: $viewModel.searchText, onCommit: {
+            TextField("Search GitHub Users...", text: $viewModel.searchText, onCommit: {
                 Task { await viewModel.searchUsers() }
             })
             .textFieldStyle(.roundedBorder)
