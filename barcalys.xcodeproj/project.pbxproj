@@ -77,6 +77,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19AB86012FC9FC3800A38773 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				196F67C92FC8A4DD00E5F446 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19AB86022FC9FC4C00A38773 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19E5997B2D8A948A004F1DC1 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19AB86032FC9FC4D00A38773 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				196F67C52FC8A41200E5F446 /* GithubModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19AB86042FC9FC7500A38773 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				196F67C72FC8A48700E5F446 /* GitHubService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		19E5996D2D8A948A004F1DC1 = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +132,11 @@
 		19E599782D8A948A004F1DC1 /* barcalys */ = {
 			isa = PBXGroup;
 			children = (
+				19AB86042FC9FC7500A38773 /* Service */,
+				19AB86032FC9FC4D00A38773 /* Model */,
+				19AB86022FC9FC4C00A38773 /* View */,
+				19AB86012FC9FC3800A38773 /* ViewModel */,
 				19E599792D8A948A004F1DC1 /* barcalysApp.swift */,
-				19E5997B2D8A948A004F1DC1 /* ContentView.swift */,
-				196F67C52FC8A41200E5F446 /* GithubModel.swift */,
-				196F67C72FC8A48700E5F446 /* GitHubService.swift */,
-				196F67C92FC8A4DD00E5F446 /* SearchViewModel.swift */,
 				19E5997D2D8A948C004F1DC1 /* Assets.xcassets */,
 				19E5997F2D8A948C004F1DC1 /* Preview Content */,
 			);
